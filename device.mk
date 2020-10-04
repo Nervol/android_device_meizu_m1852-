@@ -64,7 +64,3 @@ $(call inherit-product, device/meizu/sdm710-common/common.mk)
 #GoogleCamera
 PRODUCT_PACKAGES += \
     GoogleCamera
-	
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
