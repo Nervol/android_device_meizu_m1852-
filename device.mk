@@ -60,7 +60,3 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from sdm710-common
 $(call inherit-product, device/meizu/sdm710-common/common.mk)
-
-#GoogleCamera
-PRODUCT_PACKAGES += \
-    GoogleCamera
