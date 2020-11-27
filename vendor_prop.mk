@@ -2,7 +2,7 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=none \
     vendor.audio.offload.track.enable=true \
-    vendor.audio_hal.period_size=192 \
+    vendor.audio_hal.period_size=240 \
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
