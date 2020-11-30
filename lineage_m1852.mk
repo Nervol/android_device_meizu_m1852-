@@ -45,6 +45,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=400
-
-# Exclude AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
