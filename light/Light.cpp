@@ -18,7 +18,7 @@
 #define LED_OFF 0
 #define LED_BLINK 10
 
-static constexpr float BRIGHTNESS_MIN = 20;
+static constexpr float BRIGHTNESS_MIN = 5;
 static constexpr float BRIGHTNESS_MAX = 1023;
 static constexpr float BRIGHTNESS_RANGE_OLD = 255 - 10;
 static constexpr float BRIGHTNESS_RANGE_NEW = BRIGHTNESS_MAX - BRIGHTNESS_MIN;
