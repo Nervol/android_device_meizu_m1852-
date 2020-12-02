@@ -35,13 +35,6 @@ PRODUCT_MODEL := meizu X8
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="M1852" \
     PRODUCT_NAME="meizu_X8" \
-    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys"
+    PRIVATE_BUILD_DESC="meizu_X8-user 8.1.0 OPM1.171019.026 1556996821 release-keys"
 
-BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys \
-    ro.build.description=walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=400
+BUILD_FINGERPRINT := Meizu/meizu_X8/X8:8.1.0/OPM1.171019.026/1556996821:user/release-keys
