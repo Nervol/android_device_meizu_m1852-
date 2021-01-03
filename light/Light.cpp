@@ -18,9 +18,9 @@
 #define LED_OFF 0
 #define LED_BLINK 10
 
-static constexpr float BRIGHTNESS_MIN = 0;
+static constexpr float BRIGHTNESS_MIN = 5;
 static constexpr float BRIGHTNESS_MAX = 1023;
-static constexpr float BRIGHTNESS_RANGE_OLD = 255 - 1;
+static constexpr float BRIGHTNESS_RANGE_OLD = 255 - 10;
 static constexpr float BRIGHTNESS_RANGE_NEW = BRIGHTNESS_MAX - BRIGHTNESS_MIN;
 
 namespace {
@@ -108,11 +108,8 @@ void Light::setPanelBacklight(const LightState& state) {
 
     int old_brightness = brightness;
 
-    brightness = BRIGHTNESS_MIN + ((float) brightness - 1) /
+    brightness = BRIGHTNESS_MIN + ((float) brightness - 10) /
             BRIGHTNESS_RANGE_OLD * BRIGHTNESS_RANGE_NEW;
-    if (brightness < BRIGHTNESS_MIN) {
-        brightness = BRIGHTNESS_MIN;
-    }
 
     LOG(VERBOSE) << "scaling brightness " << old_brightness << " => " << brightness;
 
